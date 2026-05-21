@@ -357,6 +357,7 @@ function PDFExport({ saved, onExport }) {
         className="btn btn-primary"
         disabled={selected.length === 0}
         onClick={() => onExport(selected)}
+        style={{ marginBottom: '5rem' }}
       >
         <i className="ti ti-file-type-pdf" /> Generate PDF {selected.length > 0 ? `(${selected.length} week${selected.length > 1 ? 's' : ''})` : ''}
       </button>
